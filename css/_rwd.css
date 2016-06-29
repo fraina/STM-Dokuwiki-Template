@@ -141,4 +141,8 @@
   .dokuwiki {
     min-width: 320px;
   }
+
+  .header-subTitle {
+    display: none;
+  }
 }
