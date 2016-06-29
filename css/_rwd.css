@@ -11,8 +11,22 @@
     margin-bottom: 4em;
   }
 
+  .wrapper-content {
+    display: flex;
+    flex-direction: row;
+  }
+
   .header {
     margin-bottom: 2em;
+  }
+
+  .main {
+    width: calc(~'75% - 1em');
+  }
+
+  .sidebar {
+    width: 25%;
+    margin-right: 1em;
   }
 }
 
