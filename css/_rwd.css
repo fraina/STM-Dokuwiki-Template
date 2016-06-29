@@ -129,7 +129,8 @@
     right: 22px;
   }
 
-  .header-navButton--searchBar button {
+  .header-navButton--searchBar button,
+  .header-navButton--searchBar input.button {
     width: 80px;
     height: 35px;
     border-left: 5px #eee solid;
