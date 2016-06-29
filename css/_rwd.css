@@ -56,10 +56,6 @@
     font-size: 100%;
   }
 
-  .sidebar-title .icon-control {
-    line-height: 1.5;
-  }
-
   .pc-only {
     display: none;
   }
