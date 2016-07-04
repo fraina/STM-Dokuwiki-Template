@@ -6,9 +6,11 @@
 
 /* existing wikipage */
 .dokuwiki a.wikilink1 {
+    color: @ini_existing;
 }
 /* not existing wikipage */
 .dokuwiki a.wikilink2 {
+    color: @ini_missing;
     text-decoration: none;
 }
 .dokuwiki a.wikilink2:link,

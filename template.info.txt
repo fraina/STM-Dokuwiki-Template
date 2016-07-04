@@ -1,4 +1,4 @@
-base     DokuWiki Template
+base     stm
 author   Fraina Huang
 email    jscaem@gmail.com
 date     2016-06-29

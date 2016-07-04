@@ -30,7 +30,7 @@
   }
 }
 
-@media (max-width:800px) {
+@media (max-width:@ini_tablet_width) {
   .not-pc {
     visibility: visible;
   }
@@ -65,7 +65,7 @@
     display: block;
     background-color: #eee;
     overflow: hidden;
-    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .3) inset, 0 -5px 5px -5px rgba(0, 0, 0, .3) inset;
+    box-shadow: 0 5px .5px -5px rgba(0, 0, 0, .3) inset,0 -5px 3px -5px rgba(0, 0, 0, .3) inset;
     display: none;
   }
 
@@ -151,14 +151,26 @@
   .dokuwiki input#qsearch__in {
     width: calc(100%) !important;
   }
+
+  .footer {
+    font-size: .8em;
+  }
+
+  .footer-content {
+    height: 5.5em;
+  }
 }
 
-@media (max-width:480px) {
+@media (max-width:@ini_phone_width) {
   .dokuwiki {
-    min-width: 320px;
+    min-width: 305px;
   }
 
   .header-subTitle {
     display: none;
+  }
+
+  .dokuwiki ul.admin_tasks {
+    width: 80%;
   }
 }
