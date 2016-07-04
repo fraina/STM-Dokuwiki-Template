@@ -114,6 +114,7 @@
   .header-navButton {
     transition: all .5s;
     background-color: transparent;
+    cursor: pointer;
   }
 
   .header-nav.not-pc .icon-cube {
