@@ -1,18 +1,7 @@
-base     dokuwiki
+base     DokuWiki Template
 author   Fraina Huang
 email    jscaem@gmail.com
 date     2016-06-29
 name     STM Dokuwiki Template
 desc     Another simplified theme for dokuwiki.
 url      https://github.com/Fraina/STM-Dokuwiki-Template
-
----------------------------------------------------------
-
-Edit from:
-base     dokuwiki
-author   Anika Henke
-email    anika@selfthinker.org
-date     2014-06-04
-name     DokuWiki Template
-desc     DokuWiki's default template since 2012
-url      http://www.dokuwiki.org/template:dokuwiki
