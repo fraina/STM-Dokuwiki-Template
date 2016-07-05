@@ -4,7 +4,7 @@
  *
  * @link     https://github.com/Fraina/STM-Dokuwiki-Template
  * @author   Fraina <jscaem@gmail.com>
- * @license  GPL 3 (http://www.gnu.org/licenses/gpl.html)
+ * @license  GPL 2 (http://www.gnu.org/licenses/gpl.html)
  *
  * ------------------------------------------------------------------------------------
  *

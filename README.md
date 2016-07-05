@@ -6,4 +6,4 @@ Another simple, clean and responsive theme for dokuwiki, base on the [dokuwiki_t
 See screenshots in [examples](examples/).
 
 ## License
-GPLv3
+GPLv2
