@@ -21,11 +21,11 @@
   }
 
   .main {
-    width: calc(~'75% - 1em');
+    width: 100% - @ini_sidebar_percentage;
   }
 
   .sidebar {
-    width: 25%;
+    width: @ini_sidebar_percentage;
     margin-right: 1em;
   }
 }
