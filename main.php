@@ -20,8 +20,7 @@
 if (!defined('DOKU_INC')) die(); /* must be run from within DokuWiki */
 header('X-UA-Compatible: IE=edge,chrome=1');
 
-$hasSidebar = page_findnearest($conf['sidebar']);
-$showSidebar = $hasSidebar && ($ACT=='show');
+$showSidebar = page_findnearest($conf['sidebar']) && ($ACT=='show');
 ?><!DOCTYPE html>
 <html lang="<?php echo $conf['lang'] ?>" dir="<?php echo $lang['direction'] ?>" class="no-js">
 <head>
@@ -38,6 +37,9 @@ $showSidebar = $hasSidebar && ($ACT=='show');
     <!--[if lte IE 7 ]><div id="IE7"><![endif]--><!--[if IE 8 ]><div id="IE8"><![endif]-->
 
     <div class="wrapper">
+      <script>console.log(<?php
+        echo json_encode($conf['sidebar']);
+      ?>);</script>
         <?php
             // render the content into buffer for later use
             ob_start();
@@ -48,8 +50,8 @@ $showSidebar = $hasSidebar && ($ACT=='show');
 
         <div class="wrapper-content">
             <div class="sidebar fl">
-                <h3 class="sidebar-title"><?php tpl_pagetitle() ?><i class="icon-control plxs"></i></h3>
                 <aside class="sidebar-aside">
+                    <h3 class="sidebar-title"><?php tpl_pagetitle() ?><i class="icon-control plxs"></i></h3>
                     <nav class="sidebar-articleNav mbl">
                         <?php
                             $toc = tpl_toc(true);
@@ -69,6 +71,13 @@ $showSidebar = $hasSidebar && ($ACT=='show');
                                 <?php endif ?>
                             </div>
                         <?php endif ?>
+                    </div>
+                    <div class="sidebar-page">
+                      <?php if ($showSidebar): ?>
+                        <?php tpl_includeFile('sidebarheader.html') ?>
+                        <?php tpl_include_page($conf['sidebar'], 1, 1) /* includes the nearest sidebar page */ ?>
+                        <?php tpl_includeFile('sidebarfooter.html') ?>
+                      <?php endif; ?>
                     </div>
                 </aside>
             </div>
