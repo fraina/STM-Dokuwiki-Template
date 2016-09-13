@@ -1,0 +1,25 @@
+.header-title,
+.header-subTitle,
+[class^=header-navButton],
+.sidebar-title .icon-control {
+    display: table-cell;
+    vertical-align: middle
+}
+.header-content,
+.wrapper-content,
+.footer-content {
+    padding: 0 1em;
+    max-width: @ini_site_width;
+    margin: auto
+}
+.header-heading a:hover,
+[class^=header-navButton] [class^=icon]:hover,
+[class^=header-navButton].has-subList a:hover,
+.sidebar-breadcrumbs bdi a:hover,
+.header-heading a:focus,
+[class^=header-navButton] [class^=icon]:focus,
+[class^=header-navButton].has-subList a:focus,
+.sidebar-breadcrumbs bdi a:focus {
+    border-bottom: none;
+    outline: none
+}

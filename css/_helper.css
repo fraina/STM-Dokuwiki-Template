@@ -1,0 +1,266 @@
+/* dev */
+.group::after,
+.g::after {
+    clear: both;
+    content: "";
+    display: table
+}
+.debug {
+    background-color: pink !important
+}
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden
+}
+.ir::before {
+    content: "";
+    display: block;
+    height: 150%;
+    width: 0
+}
+
+/* mvcss */
+.db {
+    display: block
+}
+.di {
+    display: inline
+}
+.dib {
+    display: inline-block
+}
+.dn {
+    display: none
+}
+.maxs {
+    margin: 0.3125em
+}
+.mas {
+    margin: 0.625em
+}
+.mam {
+    margin: 1.25em
+}
+.mal {
+    margin: 2.5em
+}
+.maxl {
+    margin: 5em
+}
+.mbf {
+    margin-bottom: 0
+}
+.mbxs {
+    margin-bottom: 0.3125em
+}
+.mbs {
+    margin-bottom: 0.625em
+}
+.mbm {
+    margin-bottom: 1.25em
+}
+.mbl {
+    margin-bottom: 2.5em
+}
+.mbxl {
+    margin-bottom: 5em
+}
+.mhc {
+    margin-left: auto;
+    margin-right: auto
+}
+.mlf {
+    margin-left: 0
+}
+.mlxs {
+    margin-left: 0.3125em
+}
+.mls {
+    margin-left: 0.625em
+}
+.mlm {
+    margin-left: 1.25em
+}
+.mll {
+    margin-left: 2.5em
+}
+.mrf {
+    margin-right: 0
+}
+.mrxs {
+    margin-right: 0.3125em
+}
+.mrs {
+    margin-right: 0.625em
+}
+.mrm {
+    margin-right: 1.25em
+}
+.mrl {
+    margin-right: 2.5em
+}
+.mtf {
+    margin-top: 0
+}
+.mtxs {
+    margin-top: 0.3125em
+}
+.mts {
+    margin-top: 0.625em
+}
+.mtm {
+    margin-top: 1.25em
+}
+.mtl {
+    margin-top: 2.5em
+}
+.mtxl {
+    margin-top: 5em
+}
+.paxs {
+    padding: 0.3125em
+}
+.pas {
+    padding: 0.625em
+}
+.pam {
+    padding: 1.25em
+}
+.pal {
+    padding: 2.5em
+}
+.paxl {
+    padding: 5em
+}
+.pbf {
+    padding-bottom: 0
+}
+.pbxs {
+    padding-bottom: 0.3125em
+}
+.pbs {
+    padding-bottom: 0.625em
+}
+.pbm {
+    padding-bottom: 1.25em
+}
+.pbl {
+    padding-bottom: 2.5em
+}
+.pbxl {
+    padding-bottom: 5em
+}
+.plf {
+    padding-left: 0
+}
+.plxs {
+    padding-left: 0.3125em
+}
+.pls {
+    padding-left: 0.625em
+}
+.plm {
+    padding-left: 1.25em
+}
+.pll {
+    padding-left: 2.5em
+}
+.prf {
+    padding-right: 0
+}
+.prxs {
+    padding-right: 0.3125em
+}
+.prs {
+    padding-right: 0.625em
+}
+.prm {
+    padding-right: 1.25em
+}
+.prl {
+    padding-right: 2.5em
+}
+.ptf {
+    padding-top: 0
+}
+.ptxs {
+    padding-top: 0.3125em
+}
+.pts {
+    padding-top: 0.625em
+}
+.ptm {
+    padding-top: 1.25em
+}
+.ptl {
+    padding-top: 2.5em
+}
+.ptxl {
+    padding-top: 5em
+}
+.fl {
+    float: left
+}
+.fr {
+    float: right
+}
+.poa {
+    position: absolute
+}
+.pof {
+    position: fixed
+}
+.por {
+    position: relative
+}
+.pos {
+    position: static
+}
+.ra {
+    border-radius: 50%
+}
+.ram {
+    border-radius: 3px
+}
+.ran {
+    border-radius: 0
+}
+.tac {
+    text-align: center
+}
+.tfb {
+    font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif
+}
+.tfh {
+    font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif
+}
+.tsxs {
+    font-size: 75%
+}
+.tss {
+    font-size: 90%
+}
+.tsl {
+    font-size: 115%
+}
+.tsxl {
+    font-size: 150%
+}
+.tsi {
+    font-style: italic
+}
+.ttu {
+    text-transform: uppercase
+}
+.twn {
+    font-weight: normal
+}
+.twb {
+    font-weight: bold
+}

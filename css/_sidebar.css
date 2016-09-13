@@ -1,0 +1,80 @@
+.sidebar {
+    max-width: @ini_sidebar_max_width;
+    min-width: @ini_sidebar_min_width
+}
+
+.sidebar-aside {
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+.sidebar-title {
+    display: table;
+    margin-bottom: 1.25em;
+    text-transform: capitalize;
+    order: @ini_sidebar_title_order
+}
+
+.sidebar-articleNav {
+    order: @ini_sidebar_toc_order
+}
+
+.sidebar-articleNav .toc {
+    list-style: none;
+    padding: 0;
+    margin-left: 1.25em;
+    font-size: 14.4px
+}
+
+.sidebar-articleNav .level1 {
+    margin-top: 1.875em
+}
+
+.sidebar-articleNav .level1:first-child {
+    margin-top: 0
+}
+
+.sidebar-articleNav h3 {
+    display: none
+}
+
+.sidebar-page {
+    order: @ini_sidebar_page_order
+}
+
+.sidebar-breadcrumbs {
+    margin-top: 1.25em;
+    order: @ini_sidebar_breadcrum_order
+}
+
+.sidebar-breadcrumbs .bchead {
+    display: block;
+    font-size: 90%;
+    margin-bottom: 0.625em
+}
+
+.sidebar-breadcrumbs .bcsep {
+    display: none
+}
+
+.sidebar-breadcrumbs bdi {
+    display: inline-block;
+    margin-bottom: 0.625em
+}
+
+.sidebar-breadcrumbs .breadcrumbs bdi a {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: @ini_breadcrumb_background;
+    font-size: 90%;
+    color: @ini_breadcrumb_text;
+    padding: 0.07813em 0.75em;
+    margin-right: 0.625em;
+    font-weight: normal
+}
+
+.sidebar-breadcrumbs bdi a:hover {
+    color: @ini_breadcrumb_hover
+}

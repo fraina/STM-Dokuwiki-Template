@@ -1,0 +1,21 @@
+.footer {
+    width: 100%;
+    display: block;
+    clear: both;
+    margin-top: 4em;
+    padding: 1.25em 0 1.25em;
+    border-top: 1px @ini_border_underline solid;
+    -moz-box-shadow: 0 -1px 0 @ini_border;
+    -webkit-box-shadow: 0 -1px 0 @ini_border;
+    box-shadow: 0 -1px 0 @ini_border;
+    background: @ini_footer_background
+}
+.footer-content {
+    font-size: 90%;
+    color: @ini_footer_text;
+    height: 3.7em;
+    line-height: 1.8
+}
+.footer-content p {
+    margin-bottom: 0.3125em
+}

@@ -158,6 +158,10 @@
   .footer-content {
     height: 5.5em;
   }
+
+  .detail-img, .detail-meta {
+    width: 100%;
+  }
 }
 
 @media (max-width:@ini_phone_width) {

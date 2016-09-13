@@ -1,0 +1,142 @@
+.header {
+    -moz-box-shadow: 0 1px 0 @ini_border_underline;
+    -webkit-box-shadow: 0 1px 0 @ini_border_underline;
+    box-shadow: 0 1px 0 @ini_border_underline;
+    z-index: 999;
+    height: 4em;
+    border-bottom: 1px @ini_border solid;
+    background: @ini_header_background;
+    color: @ini_header_text
+}
+
+.header a {
+    color: @ini_header_link
+}
+
+.header a:hover {
+    color: @ini_header_linkHover
+}
+
+.header .header-content {
+    padding: 0 0 0 1em;
+    height: 100%
+}
+
+.header-heading {
+    display: table;
+    height: 100%
+}
+
+.header-title {
+    height: 100%
+}
+
+.header-subTitle {
+    height: 100%
+}
+
+.header-nav {
+    display: table;
+    height: 100%
+}
+
+[class^=header-navButton] {
+    position: relative;
+    font-size: 115%;
+    width: 4em;
+    height: 100%;
+    text-align: center;
+}
+
+[class^=header-navButton].has-subList {
+    cursor: pointer
+}
+
+[class^=header-navButton]:hover a[class^=icon] {
+    color: @ini_header_linkHover
+}
+
+[class ^=header-navButton].has-subList ul {
+    position: absolute;
+    font-size: 75%;
+    z-index: 999;
+    list-style: none;
+    padding: 0;
+    top: 64px;
+    right: -2px;
+    background-color: @ini_header_background;
+    border: 1px @ini_border solid;
+    border-top: none;
+    display: none;
+}
+
+[class^=header-navButton].has-subList ul:after {
+    content: " ";
+    display: block;
+    line-height: 0;
+    border-top: 1px #eee solid
+}
+
+[class^=header-navButton].has-subList li {
+    display: block;
+    text-align: left;
+    white-space: nowrap;
+    padding: 0.15625em 1.25em
+}
+
+[class^=header-navButton].has-subList a {
+    display: block
+}
+
+header-navButton--searchBar {
+    text-align: right
+}
+
+.header-navButton--searchBar [class^=icon] {
+    position: absolute;
+    right: 16px;
+    top: 23px;
+    pointer-events: none;
+    color: @ini_search_iconColor
+}
+
+div.header-navButton--searchBar:hover a[class^=icon] {
+    color: @ini_search_iconHover
+}
+
+.header-navButton--searchBar form#dw__search {
+    float: right;
+    width: 11em
+}
+
+.header-navButton--searchBar #qsearch__in {
+    outline: 0;
+    width: 7.5em;
+    height: 25px;
+    float: left;
+    border: 0;
+    padding: 5px 11px;
+    color: @ini_search_text;
+    background-color: @ini_search_input
+}
+
+.header-navButton--searchBar #qsearch__out {
+    font-size: 89%;
+    left: -203px;
+    top: 3.2em;
+    width: 11em
+}
+
+.header-navButton--searchBar:hover [class^='icon'] {
+    color: @ini_search_iconHover
+}
+
+.header-navButton--searchBar button,
+.header-navButton--searchBar input.button {
+    float: left;
+    border: 0;
+    background: @ini_search_input;
+    width: 1.9375em;
+    height: 35px;
+    text-indent: -9999px
+}

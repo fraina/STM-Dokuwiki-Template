@@ -1,0 +1,91 @@
+.main {
+    line-height: 1.7
+}
+.table {
+    width: 100%;
+    display: block;
+    overflow: auto;
+    margin-bottom: 1.25em
+}
+.table table {
+    width: inherit
+}
+.table table thead th {
+    border-bottom: 1px #616161 solid
+}
+.table table tbody td {
+    border-top: 1px rgba(97, 97, 97, 0.3) solid
+}
+.table table tbody tr:hover {
+    background-color: #fafafa
+}
+.table table tbody tr:first-child td {
+    border-top: none
+}
+.table table td,
+.table table th {
+    padding: 0.3125em 0.625em
+}
+.code,
+.cli {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 0.07813em 0.625em
+}
+code.code {
+    margin: 0 0.625em
+}
+pre.code {
+    padding: 0.625em;
+    border: 0;
+    overflow: auto;
+}
+blockquote {
+    margin-left: 0;
+    padding-left: 0.625em;
+    border-left: 3px #616161 solid
+}
+sup {
+    margin: 0 0.625em
+}
+hr {
+    margin: 1.25em 0;
+    border: 0;
+    border-top: 1px @ini_border solid;
+    border-bottom: 1px @ini_border_underline solid
+}
+.main h1,
+.main h2,
+.main h3,
+.main h4 {
+    padding-bottom: 0.3125em;
+    margin-bottom: 0.625em;
+    margin-top: 4em
+}
+.main h1 {
+    border-bottom: 3px rgba(97, 97, 97, 0.1) solid
+}
+.main h2 {
+    border-bottom: 2px rgba(97, 97, 97, 0.1) solid
+}
+.main h3 {
+    border-bottom: 2px rgba(97, 97, 97, 0.1) solid
+}
+.main li {
+    margin: 0
+}
+.main table {
+    border-collapse: separate
+}
+.dokuwiki label.block {
+    text-align: center;
+    font-weight: normal
+}
+#dw__login label[for="remember__me"] {
+    margin-left: 20%
+}
+.dokuwiki div.wrap_round {
+    color: #616161
+}

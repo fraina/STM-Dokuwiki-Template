@@ -4,25 +4,21 @@
 
 /*____________ footnotes inside the text ____________*/
 
-/* link to footnote inside the text */
-.dokuwiki sup a.fn_top {
-}
 /* JSpopup */
-div.insitu-footnote {
-    max-width: 40%;
-    min-width: 5em;
+.insitu-footnote.JSpopup {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 0.07813em 0.625em;
+  font-size: 90%;
+  background-color: rgba(238, 238, 238, 0.9)
 }
 
 /*____________ footnotes at the bottom of the page ____________*/
 
-.dokuwiki div.footnotes {
-    border-top: 1px solid @ini_border;
-    padding: .5em 0 0 0;
-    margin: 1em 0 0 0;
-    clear: both;
-}
-.dokuwiki div.footnotes div.fn {
-}
-.dokuwiki div.footnotes div.fn sup a.fn_bot {
-    font-weight: bold;
+.footnotes {
+  border-top: 3px rgba(97, 97, 97, 0.1) solid;
+  margin-top: 5em;
+  padding-top: 1.25em;
+  font-size: 90%
 }

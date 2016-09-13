@@ -57,3 +57,7 @@
     clear: right;
     float: left;
 }
+
+.dokuwiki #config__manager tr.default .input {
+    background: @ini_background
+}
