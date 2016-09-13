@@ -30,12 +30,12 @@ if (!defined('DOKU_INC')) die();
                 <a class="icon-cube"></a>
                 <ul>
                     <?php
-                            tpl_action('edit', 1, 'li');     /* �s�譶�� */
-                            tpl_action('revert', 1, 'li');   /* �ª� */
-                            tpl_action('backlink', 1, 'li'); /* �ϦV�s�� */
-                            tpl_action('recent', 1, 'li');   /* �̪����s */
-                            tpl_action('media', 1, 'li');    /* �h�C���޲z�� */
-                            tpl_action('index', 1, 'li');    /* �����a�� */
+                            tpl_action('edit', 1, 'li');
+                            tpl_action('revert', 1, 'li');
+                            tpl_action('backlink', 1, 'li');
+                            tpl_action('recent', 1, 'li');
+                            tpl_action('media', 1, 'li');
+                            tpl_action('index', 1, 'li');
                     ?>
                 </ul>
             </div>
@@ -48,10 +48,10 @@ if (!defined('DOKU_INC')) die();
                             tpl_userinfo(); /* 'Logged in as ...' */
                             echo '</li>';
                         }
-                        tpl_action('admin', 1, 'li');    /* �޲z���� */
-                        tpl_action('profile', 1, 'li');  /* ���s�ӤH���� */
-                        tpl_action('register', 1, 'li'); /* ���U(�p�G���}��?) */
-                        tpl_action('login', 1, 'li');    /* �n�X */
+                        tpl_action('admin', 1, 'li');
+                        tpl_action('profile', 1, 'li');
+                        tpl_action('register', 1, 'li');
+                        tpl_action('login', 1, 'li');
                     ?>
                 </ul>
             </div>
@@ -75,10 +75,10 @@ if (!defined('DOKU_INC')) die();
   </div>
   <ul>
     <?php
-            tpl_action('edit', 1, 'li');     /* �s�譶�� */
-            tpl_action('backlink', 1, 'li'); /* �ϦV�s�� */
-            tpl_action('recent', 1, 'li');   /* �̪����s */
-            tpl_action('index', 1, 'li');    /* �����a�� */
+            tpl_action('edit', 1, 'li');
+            tpl_action('backlink', 1, 'li');
+            tpl_action('recent', 1, 'li');
+            tpl_action('index', 1, 'li');
     ?>
     <?php
         if (!empty($_SERVER['REMOTE_USER'])) {
@@ -86,10 +86,10 @@ if (!defined('DOKU_INC')) die();
             tpl_userinfo(); /* 'Logged in as ...' */
             echo '</li>';
         }
-        tpl_action('admin', 1, 'li');    /* �޲z���� */
-        tpl_action('profile', 1, 'li');  /* ���s�ӤH���� */
-        tpl_action('register', 1, 'li'); /* ���U(�p�G���}��?) */
-        tpl_action('login', 1, 'li');    /* �n�X */
+        tpl_action('admin', 1, 'li');
+        tpl_action('profile', 1, 'li');
+        tpl_action('register', 1, 'li');
+        tpl_action('login', 1, 'li');
     ?>
   </ul>
 </div>

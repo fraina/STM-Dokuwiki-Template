@@ -37,9 +37,6 @@ $showSidebar = page_findnearest($conf['sidebar']) && ($ACT=='show');
     <!--[if lte IE 7 ]><div id="IE7"><![endif]--><!--[if IE 8 ]><div id="IE8"><![endif]-->
 
     <div class="wrapper">
-      <script>console.log(<?php
-        echo json_encode($conf['sidebar']);
-      ?>);</script>
         <?php
             // render the content into buffer for later use
             ob_start();
