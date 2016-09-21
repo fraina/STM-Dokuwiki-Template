@@ -49,8 +49,8 @@ $hideSidebar = ($ACT=='profile') || ($ACT=='admin')
         <div class="wrapper-content">
             <div class="sidebar">
                 <aside class="sidebar-aside">
-                    <h3 class="sidebar-title <?php echo $hideSidebar ? 'hidden' : '';?>">
-                      <div><?php tpl_pagetitle() ?></div> <?php if($conf['maxtoclevel'] > 0): ?><i class="icon-control plxs"></i><?php endif ?>
+                    <h3 class="sidebar-title ttc <?php echo $hideSidebar ? 'hidden' : '';?>">
+                      <?php echo $ID ?><?php if($conf['maxtoclevel'] > 0): ?><i class="icon-control plxs"></i><?php endif ?>
                     </h3>
                     <?php if($conf['maxtoclevel'] > 0): ?>
                         <nav class="sidebar-articleNav">

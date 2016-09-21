@@ -14,13 +14,16 @@
     width: 100%;
     display: @ini_sidebar_title_display;
     margin-bottom: 1.25em;
-    text-transform: capitalize;
     order: @ini_sidebar_title_order;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.sidebar-title div {
+.ttc {
+  text-transform: capitalize;
+}
+
+.sidebar-title span {
     max-width: 85%;
     -ms-text-overflow: ellipsis;
     text-overflow: ellipsis;

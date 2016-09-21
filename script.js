@@ -28,15 +28,17 @@ jQuery(function(){
         $first_heading.css('margin-top', 0);
     }
 
-    $wrap_column.each(function(index) {
-      if (! jQuery(this).find(':header').eq(0).prev().length) {
-        jQuery(this).find(':header').eq(0).css('margin-top', 0);
-      }
-    });
+    if ($wrap_column) {
+      $wrap_column.each(function(index) {
+        if (! jQuery(this).find(':header').eq(0).prev().length) {
+          jQuery(this).find(':header').eq(0).css('margin-top', 0);
+        }
+      });
+    }
 
     var reg = /^([^:]+[\w]+[^<])+([<].*)/,
         regresult = $sidebar_title.html().match(reg);
-    regresult && $sidebar_title.html(regresult[1] + regresult[2]);
+    regresult && $sidebar_title.html('<span>' + regresult[1] + '</span>' + regresult[2]);
 
     $not_pc_nav.slideUp(0);
     $not_pc_navBtn.click(function() {
