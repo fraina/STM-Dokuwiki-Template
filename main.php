@@ -21,7 +21,7 @@ if (!defined('DOKU_INC')) die(); /* must be run from within DokuWiki */
 header('X-UA-Compatible: IE=edge,chrome=1');
 
 $showSidebar = page_findnearest($conf['sidebar']) && ($ACT=='show');
-$hideSidebar = ($ACT=='profile') || ($ACT=='admin')
+$showTitle = ($ACT=='show') || ($ACT=='edit') || ($ACT=='backlink')
 ?><!DOCTYPE html>
 <html lang="<?php echo $conf['lang'] ?>" dir="<?php echo $lang['direction'] ?>" class="no-js">
 <head>
@@ -49,7 +49,7 @@ $hideSidebar = ($ACT=='profile') || ($ACT=='admin')
         <div class="wrapper-content">
             <div class="sidebar">
                 <aside class="sidebar-aside">
-                    <h3 class="sidebar-title ttc <?php echo $hideSidebar ? 'hidden' : '';?>">
+                    <h3 class="sidebar-title ttc <?php echo $showTitle ? '' : 'hidden';?>">
                       <?php echo $ID ?><?php if($conf['maxtoclevel'] > 0): ?><i class="icon-control plxs"></i><?php endif ?>
                     </h3>
                     <?php if($conf['maxtoclevel'] > 0): ?>
