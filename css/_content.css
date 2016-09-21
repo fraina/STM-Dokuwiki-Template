@@ -1,5 +1,6 @@
 .main {
-    line-height: 1.7
+    line-height: 1.7;
+    display: inline-block;
 }
 .table {
     width: 100%;

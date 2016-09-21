@@ -11,11 +11,6 @@
     margin-bottom: 4em;
   }
 
-  .wrapper-content {
-    display: flex;
-    flex-direction: row;
-  }
-
   .header {
     margin-bottom: 2em;
   }
@@ -26,7 +21,11 @@
 
   .sidebar {
     width: @ini_sidebar_percentage;
-    margin-right: 1em;
+  }
+
+  .sidebar-aside {
+    width: 95%;
+    float: @ini_sidebar_position;
   }
 }
 
@@ -36,6 +35,7 @@
   }
 
   .wrapper-content {
+    display: flex;
     flex-direction: column;
   }
 
@@ -44,8 +44,8 @@
     margin-bottom: 0;
   }
 
-  .sidebar.fl {
-    margin-top: 2em;
+  .sidebar {
+    padding: 2em 0;
   }
 
   .sidebar-breadcrumbs {

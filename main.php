@@ -21,6 +21,7 @@ if (!defined('DOKU_INC')) die(); /* must be run from within DokuWiki */
 header('X-UA-Compatible: IE=edge,chrome=1');
 
 $showSidebar = page_findnearest($conf['sidebar']) && ($ACT=='show');
+$hideSidebar = ($ACT=='profile') || ($ACT=='admin')
 ?><!DOCTYPE html>
 <html lang="<?php echo $conf['lang'] ?>" dir="<?php echo $lang['direction'] ?>" class="no-js">
 <head>
@@ -46,29 +47,33 @@ $showSidebar = page_findnearest($conf['sidebar']) && ($ACT=='show');
         <?php include('tpl_header.php') ?>
 
         <div class="wrapper-content">
-            <div class="sidebar fl">
+            <div class="sidebar">
                 <aside class="sidebar-aside">
-                    <h3 class="sidebar-title"><?php tpl_pagetitle() ?><i class="icon-control plxs"></i></h3>
-                    <nav class="sidebar-articleNav mbl">
-                        <?php
-                            $toc = tpl_toc(true);
-                            if ($toc){
-                                echo $toc;
-                            }
-                        ?>
-                    </nav>
+                    <h3 class="sidebar-title <?php echo $hideSidebar ? 'hidden' : '';?>">
+                      <div><?php tpl_pagetitle() ?></div> <?php if($conf['maxtoclevel'] > 0): ?><i class="icon-control plxs"></i><?php endif ?>
+                    </h3>
+                    <?php if($conf['maxtoclevel'] > 0): ?>
+                        <nav class="sidebar-articleNav">
+                            <?php
+                                $toc = tpl_toc(true);
+                                if ($toc){
+                                    echo $toc;
+                                }
+                            ?>
+                        </nav>
+                    <?php endif ?>
+                    <?php if($conf['breadcrumbs'] || $conf['youarehere']): ?>
                     <div class="sidebar-breadcrumbs">
-                        <?php if($conf['breadcrumbs'] || $conf['youarehere']): ?>
-                            <div class="breadcrumbs">
-                                <?php if($conf['youarehere']): ?>
-                                    <div class="youarehere"><?php tpl_youarehere() ?></div>
-                                <?php endif ?>
-                                <?php if($conf['breadcrumbs']): ?>
-                                    <div class="trace"><?php tpl_breadcrumbs() ?></div>
-                                <?php endif ?>
-                            </div>
-                        <?php endif ?>
+                        <div class="breadcrumbs">
+                            <?php if($conf['youarehere']): ?>
+                                <div class="youarehere"><?php tpl_youarehere() ?></div>
+                            <?php endif ?>
+                            <?php if($conf['breadcrumbs']): ?>
+                                <div class="trace"><?php tpl_breadcrumbs() ?></div>
+                            <?php endif ?>
+                        </div>
                     </div>
+                    <?php endif ?>
                     <div class="sidebar-page">
                       <?php if ($showSidebar): ?>
                         <?php tpl_includeFile('sidebarheader.html') ?>
@@ -78,7 +83,7 @@ $showSidebar = page_findnearest($conf['sidebar']) && ($ACT=='show');
                     </div>
                 </aside>
             </div>
-            <div class="main fr">
+            <div class="main">
                 <?php echo $buffer?>
             </div>
         </div>
