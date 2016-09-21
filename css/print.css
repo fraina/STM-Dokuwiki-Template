@@ -1,174 +1,175 @@
-/**
- * This file provides the styles for printing.
- *
- * @todo: improve and finish
- */
+/* Base */
 
-body {
-    font: normal 87.5%/1.3 Garamond, Baskerville, "Hoefler Text", "Nimbus Roman No9 L", serif;
-    background-color: #fff;
-    color: #000;
+html {
+    background: @ini_background;
+    color: @ini_text;
+    font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5
 }
 
-/* hide certain sections */
-.a11y,
-audio,
-video,
-#dokuwiki__header .tools,
-#dokuwiki__aside,
-.dokuwiki .breadcrumbs,
-.dokuwiki .pageId,
-#dw__toc,
-h3.toggle,
-#dokuwiki__pagetools,
-#dokuwiki__footer {
+body {
+    font-size: 100%
+}
+
+ul, p {
+    margin-top: 0
+}
+
+li {
+    margin: 5px 0
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+    font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 0.3125em;
+    margin-top: 0
+}
+
+h1, .h1 {
+    font-size: 160%;
+    font-weight: 700
+}
+
+h2, .h2 {
+    font-size: 140%
+}
+
+h3, .h3 {
+    font-size: 125%
+}
+
+h4, .h4 {
+    font-size: 108%
+}
+
+h5, .h5 {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 100
+}
+
+a {
+    color: @ini_link;
+    text-decoration: none
+}
+
+a:hover {
+    border-bottom: 1px @ini_link_hover dotted;
+    color: @ini_link_hover
+}
+
+img {
+    height: auto;
+    max-width: 100%
+}
+
+/* print */
+
+.footnotes {
+    margin-top: 1em;
+    padding: 1em 0;
+    border-top: 1px rgba(97, 97, 97, 0.1) solid
+}
+
+header, .sidebar {
     display: none;
 }
 
+footer {
+    border-top: 1px #999 solid;
+    padding-top: 1em;
+}
+
+.table {
+    width: 100%;
+    display: block;
+    overflow: auto;
+    margin-bottom: 1.25em
+}
+.table table {
+    width: inherit
+}
+.table table thead th {
+    border-bottom: 1px #616161 solid
+}
+.table table tbody td {
+    border-top: 1px rgba(97, 97, 97, 0.3) solid
+}
+.table table tbody tr:hover {
+    background-color: #fafafa
+}
+.table table tbody tr:first-child td {
+    border-top: none
+}
+.table table td,
+.table table th {
+    padding: 0.3125em 0.625em
+}
+.code,
+.cli {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 0.07813em 0.625em;
+    border: 1px rgba(97, 97, 97, 0.3) solid
+}
+code.code {
+    margin: 0 0.625em;
+}
+pre.code {
+    padding: 0.625em;
+    overflow: auto;
+}
+blockquote {
+    margin-left: 0;
+    padding-left: 0.625em;
+    border-left: 3px #616161 solid
+}
+sup {
+    margin: 0 0.625em
+}
+hr {
+    margin: 1.25em 0;
+    border: 0;
+    border-top: 1px @ini_border solid;
+    border-bottom: 1px @ini_border_underline solid
+}
 h1,
 h2,
 h3,
-h4,
-h5,
-caption,
-legend {
-    clear: both;
+h4 {
+    padding-bottom: 0.3125em;
+    margin-bottom: 0.625em;
+    margin-top: 3em
 }
-ul {
-    list-style: disc outside;
+h1 {
+    border-bottom: 3px rgba(97, 97, 97, 0.1) solid
 }
-ol {
-    list-style: decimal outside;
+h2 {
+    border-bottom: 2px rgba(97, 97, 97, 0.1) solid
 }
-ol ol {
-    list-style-type: lower-alpha;
+h3 {
+    border-bottom: 2px rgba(97, 97, 97, 0.1) solid
 }
-ol ol ol {
-    list-style-type: upper-roman;
+li {
+    margin: 0
 }
-ol ol ol ol {
-    list-style-type: upper-alpha;
-}
-ol ol ol ol ol {
-    list-style-type: lower-roman;
-}
-
-a:link,
-a:visited {
-    text-decoration: none;
-    border-bottom: 1pt dotted;
-    color: #333;
-    background-color: inherit;
-}
-
-/* display href after link */
-a.urlextern:after,
-a.interwiki:after,
-a.mail:after {
-   content: " [" attr(href) "]";
-   font-size: 90%;
-}
-
-/* code blocks */
-pre {
-    font-family: monospace;
-}
-dl.code dt,
-dl.file dt {
-    font-weight: bold;
-}
-
-mark {
-    font-weight: bold;
-}
-
-/* images */
-img {
-    border-width: 0;
-    vertical-align: middle;
-}
-img.media {
-    margin: .2em 0;
-}
-img.medialeft {
-    margin: .2em 1em .2em 0;
-}
-img.mediaright {
-    margin: .2em 0 .2em 1em;
-}
-img.mediacenter {
-    margin: .2em auto;
-}
-
-blockquote {
-    padding: 0 10pt;
-    margin: 0;
-    border: solid #ccc;
-    border-width: 0 0 0 2pt;
-}
-[dir=rtl] blockquote {
-    border-width: 0 2pt 0 0;
-}
-
-/* tables */
 table {
-    border-collapse: collapse;
-    empty-cells: show;
-    border-spacing: 0;
-    border: 1pt solid #ccc;
+    border-collapse: separate
 }
-th,
-td {
-    padding: 3pt 5pt;
-    margin: 0;
-    vertical-align: top;
-    border: 1pt solid #666;
-}
-th {
-    font-weight: bold;
-    text-align: left;
-}
-[dir=rtl] th {
-    text-align: right;
+label.block {
+    text-align: center;
+    font-weight: normal
 }
 
-
-/*____________ a bit of layout ____________*/
-
-#dokuwiki__header {
-    border-bottom: 2pt solid #ccc;
-}
-#dokuwiki__header h1 {
-    font-size: 1.5em;
-}
-#dokuwiki__header h1 a {
-    text-decoration: none;
-    border-width: 0;
-}
-#dokuwiki__header h1 img {
-    float: left;
-    margin-right: .5em;
-}
-[dir=rtl] #dokuwiki__header h1 img {
-    float: right;
-    margin-right: 0;
-    margin-left: .5em;
-}
-
-.dokuwiki div.footnotes {
-    clear: both;
-    border-top: 1pt dotted #999;
-    margin-top: 10pt;
-}
-
-.dokuwiki div.docInfo {
-    font-size: 90%;
-    text-align: right;
-    clear: both;
-    padding-top: 2pt;
-    border-top: 1pt solid #999;
-    margin-top: 10pt;
-}
-[dir=rtl] .dokuwiki div.docInfo {
-    text-align: left;
+img {
+  width: inherit;
+  height: inherit;
 }
