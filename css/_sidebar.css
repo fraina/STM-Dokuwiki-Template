@@ -64,8 +64,8 @@
 }
 
 .sidebar-breadcrumbs {
-    display: @ini_sidebar_breadcrum_display;
-    order: @ini_sidebar_breadcrum_order
+    display: @ini_sidebar_breadcrumb_display;
+    order: @ini_sidebar_breadcrumb_order
 }
 
 .sidebar-breadcrumbs .bchead {
