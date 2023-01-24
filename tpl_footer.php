@@ -12,5 +12,6 @@ if (!defined('DOKU_INC')) die();
     <div class="footer-content">
         <?php tpl_pageinfo() ?>
         <?php tpl_license(''); // license text ?>
+        <div class="no"><?php tpl_indexerWebBug() /* provide DokuWiki housekeeping, required in all templates */ ?></div>
     </div>
 </footer>
